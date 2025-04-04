@@ -137,7 +137,7 @@ async def profanity_detect(
     try:
         # Forward the image to the external profanity detection API
         response = requests.post(
-            "http://54.209.120.230:5000/classify",
+            "http://44.212.117.2:5000/classify",
             files={"image": (file.filename, file.file, file.content_type)}
         )
 
