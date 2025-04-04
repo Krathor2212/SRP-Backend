@@ -11,7 +11,7 @@ import os
 import requests
 
 # Database Configuration
-DATABASE_URL = "postgresql://postgres:1234@localhost/srp_db"
+DATABASE_URL = "postgresql://postgres:srp12345@srp.cejku0q8c9sd.us-east-1.rds.amazonaws.com/srp_db"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
